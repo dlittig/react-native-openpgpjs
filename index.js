@@ -5,7 +5,4 @@ const { RNOpenpgpjs } = NativeModules
 
 shim()
 const openpgp = require('./node_modules/openpgp/dist/openpgp.min')
-
-RNOpenpgpjs.openpgp = openpgp
-
-export default RNOpenpgpjs
+export default { ...openpgp }
