@@ -8,7 +8,15 @@ const shim = () => {
     console.error.apply(console, ['Assertion failed:'].concat(args));
   }
 
-  global.crypto = require('react-native-crypto')
+  global.buffer = require('buffer/').Buffer
+
+  const { randomBytes } = require('react-native-randombytes')
+
+  global.crypto = {
+    getRandomValues: randomBytes
+  }
+
+  console.log(global)
 }
 
 export { shim }
