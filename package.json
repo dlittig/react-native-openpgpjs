@@ -13,11 +13,9 @@
   "license": "MIT",
   "peerDependencies": {
     "react-native": "0.55.4",
-    "react-native-randombytes": "^3.5.1",
     "react-native-windows": "0.41.0-rc.1"
   },
   "dependencies": {
-    "buffer": "^5.2.1",
     "navigator": "^1.0.1",
     "openpgp": "4.0.1"
   }
