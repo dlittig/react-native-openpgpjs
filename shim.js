@@ -7,8 +7,6 @@ const shim = () => {
     var args = Array.prototype.slice.call(arguments, 1);
     console.error.apply(console, ['Assertion failed:'].concat(args));
   }
-
-  global.crypto = require('react-native-crypto')
 }
 
 export { shim }
