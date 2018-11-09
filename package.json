@@ -1,6 +1,6 @@
 {
   "name": "react-native-openpgpjs",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Embeds openpgpjs into react native with some polyfills.",
   "main": "index.js",
   "scripts": {
