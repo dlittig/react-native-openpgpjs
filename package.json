@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "navigator": "^1.0.1",
-    "openpgp": "4.1.0"
+    "openpgp": "4.2.0"
   }
 }

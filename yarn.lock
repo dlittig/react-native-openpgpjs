@@ -21,11 +21,6 @@ address-rfc2822@^2.0.3:
   dependencies:
     email-addresses "^3.0.0"
 
-amdefine@~1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
-  integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
-
 "asmcrypto.js@github:openpgpjs/asmcrypto":
   version "2.3.0"
   resolved "https://codeload.github.com/openpgpjs/asmcrypto/tar.gz/6e4e407b9b8ae317925a9e677cc7b4de3e447e83"
@@ -68,13 +63,6 @@ commander@~2.8.1:
   integrity sha1-Br42f+v9oMMwqh4qBy09yXYkJdQ=
   dependencies:
     graceful-readlink ">= 1.0.0"
-
-"compressjs@github:openpgpjs/compressjs":
-  version "1.0.3-git"
-  resolved "https://codeload.github.com/openpgpjs/compressjs/tar.gz/bfbb371a34d1750afa34bfa49156461acdab79a9"
-  dependencies:
-    amdefine "~1.0.0"
-    commander "~2.8.1"
 
 "elliptic@github:openpgpjs/elliptic":
   version "6.4.0"
@@ -162,10 +150,10 @@ node-localstorage@~1.3.0:
   dependencies:
     write-file-atomic "^1.1.4"
 
-openpgp@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/openpgp/-/openpgp-4.1.0.tgz#a5a3508ef9cd20779017b5731f58b41bd7bb2240"
-  integrity sha512-3UUqWquyhZWlmScm2lEKCK/202WM18lABrTmWtViGmBvfmRHdKdZHs4xnNsn/rPdQT8MUI9Sjb+YIxDPtUUm4w==
+openpgp@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/openpgp/-/openpgp-4.2.0.tgz#4527cb7e64c4c7f4f6476ab560b782dac7b52a77"
+  integrity sha512-RbmqMhIZtiPzc/PhWLXqZMX1YXaKFDFeexFCOkA7V8wRgw8c1LP9tVAzDD/sHIfavJb687kjQao4Lftl8S5E6w==
   dependencies:
     "@mattiasbuelens/web-streams-polyfill" "0.1.0-alpha.4"
     address-rfc2822 "^2.0.3"
@@ -173,18 +161,24 @@ openpgp@4.1.0:
     asn1.js "^5.0.0"
     bn.js "^4.11.8"
     buffer "^5.0.8"
-    compressjs "github:openpgpjs/compressjs"
     elliptic "github:openpgpjs/elliptic"
     hash.js "^1.1.3"
     node-fetch "^2.1.2"
     node-localstorage "~1.3.0"
     pako "^1.0.6"
+    seek-bzip "github:openpgpjs/seek-bzip"
     web-stream-tools "github:openpgpjs/web-stream-tools"
 
 pako@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
   integrity sha512-lQe48YPsMJAig+yngZ87Lus+NF+3mtu7DVOBu6b/gHO1YpKwIj5AWjZ/TOS7i46HD/UixzWb1zeWDZfGZ3iYcg==
+
+"seek-bzip@github:openpgpjs/seek-bzip":
+  version "1.0.5-git"
+  resolved "https://codeload.github.com/openpgpjs/seek-bzip/tar.gz/3aca608ffedc055a1da1d898ecb244804ef32209"
+  dependencies:
+    commander "~2.8.1"
 
 slide@^1.1.5:
   version "1.1.6"
